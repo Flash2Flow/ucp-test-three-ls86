@@ -104,35 +104,35 @@
                     <div class="col-md-6">
                         <div class="block-character-player">
                             <div class="block-nick-name">
-                                <input type="text" class="nick-name" placeholder="Введите имя персонажа...">
+                                <input type="text" class="nick-name" onkeyup="return proverka(this);" maxlength="20" id="name" placeholder="Введите имя персонажа...">
                             </div>
                             <div class="block-age">
-                                <input type="text" class="age" placeholder="Введите возраст...">
+                                <input type="text" class="age" onkeyup="return proverka(this);" maxlength="2" id="age" placeholder="Введите возраст...">
                             </div>
                             <div class="block-male">
-                                <input type="text" class="male" placeholder="Укажите пол...">
+                                <input type="text" class="male" id="male" maxlength="7" placeholder="Укажите пол...">
                             </div>
                             <div class="block-national">
-                                <input type="text" class="national" placeholder="Укажите национальность...">
+                                <input type="text" class="national" id="nazi" maxlength="20" placeholder="Укажите национальность...">
                             </div>
                             <div class="block-color">
-                                <input type="text" class="color-face" placeholder="Укажите ID скина...">
+                                <input type="text" class="color-face" onkeyup="return proverka(this);" maxlength="3" id="idskin" placeholder="Укажите ID скина...">
                             </div>
                             <div class="block-life">
-                                <input type="text" class="life-country" placeholder="Укажите место рождения...">
+                                <input type="text" class="life-country" id="local" maxlength="20" placeholder="Укажите место рождения...">
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="block-write-kventa">
                             <div class="container-area-t">
-                                <textarea class="opis" id="kventapers" placeholder="Квента персонажа"></textarea>
+                                <textarea class="opis" id="kventapers" maxlength="3000" placeholder="Квента персонажа"></textarea>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="block-btn-accept-next">
-                    <button class="link-btn" type="button">ОТПРАВИТЬ</button>
+                    <button class="link-btn" onclick="checkInf()" type="button">ОТПРАВИТЬ</button>
                 </div>
             </form>
         </div>
