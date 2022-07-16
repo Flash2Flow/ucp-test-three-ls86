@@ -16,6 +16,7 @@ textarea{
     color: black;
     font-size: 15px;
     overflow: hidden;
+    resize: none;
 }
 body{
     background-color: #311432;
@@ -403,7 +404,7 @@ input::-webkit-input-placeholder{
 }
 .container-area-t{
     margin: 0 auto;
-    width: 531px;
+    width: 450px;
 }
 .block-btn-accept-next{
     text-align: center;
@@ -540,6 +541,9 @@ input::-webkit-input-placeholder{
         margin: 0 auto;
         justify-content: center;
         margin-top: 30px;
+    }
+    .block-information-taps{
+        width: 336px;
     }
 
 }
